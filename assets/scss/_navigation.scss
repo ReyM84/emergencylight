@@ -19,5 +19,42 @@
 //(320px - 424px)
 @include media(">phone", "<lgphone") {
   .menuC {
+    background: $primaryRed !important;
+  }
+  #body
+    > div.header-container.sticky-header
+    > div.header-container.full-width.full-width.in-container
+    > div
+    > div
+    > header
+    > div.header-logo.header-logo--left,
+  .header-padding {
+    background: white !important;
+  }
+  #body
+    > div.header-container.sticky-header
+    > div.header-container.full-width.full-width.in-container
+    > div
+    > div
+    > header {
+    display: none;
+  }
+  .bg {
+    height: 10em;
+    background: #fff;
+    z-index: -1;
+    width: 100vw;
+    left: -12em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobileLogo {
+    width: 70%;
+  }
+  .mobileNumber {
+    width: 70%;
   }
 }
