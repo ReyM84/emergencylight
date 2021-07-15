@@ -24,6 +24,7 @@
 //(320px - 424px)
 @include media(">phone", "<lgphone") {
   #body > div.body.content {
+    position: relative !important;
     #carousel-active .add-to-cart-button > a {
       background: $primaryRed;
       color: white;
@@ -37,7 +38,7 @@
       position: relative;
       left: 33%;
     }
-
+    //Carousel sections
     .productCarousel-slide {
       width: 46vw !important;
       height: 75vh;
@@ -49,17 +50,18 @@
 
     .topC {
       position: relative;
-      top: -8em;
+      top: -12.83em;
     }
 
     .newC {
       position: relative;
-      top: -16em;
+      top: -25.72em;
+      height: 5em;
     }
-
+    //Footer
     #body > footer > div.container > section {
       position: relative;
-      top: -23em;
+      top: -16em;
     }
   }
 }

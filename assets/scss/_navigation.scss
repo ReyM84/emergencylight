@@ -20,6 +20,8 @@
 @include media(">phone", "<lgphone") {
   .menuC {
     background: $primaryRed !important;
+    position: relative;
+    z-index: 1000;
   }
   #body
     > div.header-container.sticky-header
@@ -36,16 +38,16 @@
     > div.header-container.full-width.full-width.in-container
     > div
     > div
-    > header {
+    > header
+    > div.header-logo.header-logo--left {
     display: none;
   }
   .bg {
     height: 10em;
     background: #fff;
-    z-index: -1;
     width: 100vw;
     left: -12em;
-    padding: 1em;
+    padding: 0.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,8 +55,15 @@
   }
   .mobileLogo {
     width: 70%;
+    margin-bottom: 0.75em;
   }
   .mobileNumber {
+    position: relative;
     width: 70%;
+    left: 3.3em;
+    margin-bottom: 2em;
+  }
+  .navPages {
+    background: $primaryRed !important;
   }
 }
