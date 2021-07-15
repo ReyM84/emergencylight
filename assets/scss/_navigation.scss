@@ -1,0 +1,23 @@
+#body > div.header-container.sticky-header > div.top-menu > div {
+  height: 2em;
+}
+
+#body
+  > div.header-container.sticky-header
+  > div.top-menu
+  > div
+  > div.right.account-links
+  > ul
+  > li.navUser-item.navUser-item--cart
+  > a
+  > span.navUser-item-cartLabel
+  > i {
+  height: 1.5em;
+  background: $primaryRed;
+}
+
+//(320px - 424px)
+@include media(">phone", "<lgphone") {
+  .menuC {
+  }
+}

@@ -1,0 +1,79 @@
+@import "./mquery.scss";
+
+// Home Page
+.custom-pages-nav,
+#side-categories > div.categories > h2,
+#carousel-active > h2,
+#side-categories > div.brands-option.with-brands > div > h2,
+#body > div.header-container.sticky-header > div.top-menu > div,
+#body > div.header-container.sticky-header > div.top-menu {
+  background: $primaryRed;
+}
+
+.custom-pages-nav {
+  position: relative !important;
+  width: 101.255%;
+  margin-left: -2em !important;
+  padding-left: 5px;
+}
+
+.clientSection {
+  position: relative;
+  display: flex;
+  height: 15em;
+  background: white;
+  h5 {
+    background: $primaryRed;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid $bottomBorder;
+  }
+  .fullSpecs {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    .vertDivide {
+      position: relative;
+      height: 70%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid rgba(198, 198, 198, 0.5);
+      .pdfButton {
+        position: relative;
+        left: 4.9em;
+        width: 60%;
+      }
+    }
+  }
+  .pastClients {
+    width: 50%;
+    .companyGif {
+      height: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 8em;
+      }
+    }
+  }
+}
+
+.mySlides {
+  display: none;
+}
+
+.search-container {
+  background: white !important;
+}
+
+@include media(">phone", "<lgphone") {
+  .pdfButton {
+    position: relative;
+    left: 0em !important;
+    width: 40em !important;
+  }
+}

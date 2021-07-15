@@ -1,0 +1,65 @@
+//Cards
+#carousel-active .add-to-cart-button > a {
+  background: $primaryRed;
+  color: white;
+  border-bottom: $bottomBorder;
+  border-radius: 1em;
+  width: 80% !important;
+}
+
+.productCarousel-slide {
+  width: 14em !important;
+  height: 25em;
+
+  &:hover {
+    border: 3px solid $primaryRed;
+    border-radius: 1em;
+  }
+}
+
+.card-body {
+  background: white;
+}
+
+//(320px - 424px)
+@include media(">phone", "<lgphone") {
+  #body > div.body.content {
+    #carousel-active .add-to-cart-button > a {
+      background: $primaryRed;
+      color: white;
+      border-bottom: $bottomBorder;
+      border-radius: 1em;
+      width: 60% !important;
+      margin: 0 auto;
+    }
+
+    .price-section.price-section--withoutTax.current-price.regular-price {
+      position: relative;
+      left: 33%;
+    }
+
+    .productCarousel-slide {
+      width: 46vw !important;
+      height: 75vh;
+      text-align: center;
+      &:hover {
+        border: none;
+      }
+    }
+
+    .topC {
+      position: relative;
+      top: -8em;
+    }
+
+    .newC {
+      position: relative;
+      top: -16em;
+    }
+
+    #body > footer > div.container > section {
+      position: relative;
+      top: -23em;
+    }
+  }
+}

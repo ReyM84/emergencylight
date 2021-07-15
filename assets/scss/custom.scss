@@ -1,0 +1,20 @@
+// PASTE CUSTOM STYLING HERE
+$primaryRed: #b1130c;
+$commonLight: #cac9c9;
+$bottomBorder: #808080;
+
+@import "./home";
+@import "./cards";
+@import "./navigation";
+
+#body > div.body.content > div.container.main,
+#body > div.header-container.sticky-header,
+#body
+  > div.header-container.sticky-header
+  > div.header-container.full-width.full-width.in-container
+  > div
+  > div
+  > header,
+#body {
+  background: white;
+}
