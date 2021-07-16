@@ -110,3 +110,9 @@
     width: 9rem !important;
   }
 }
+
+@include media(">=navfix"){
+  .productCarousel-slide {
+    height: 26rem !important;
+  }
+}

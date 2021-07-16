@@ -12,7 +12,7 @@
   > a
   > span.navUser-item-cartLabel
   > i {
-  height: 1.5rem;
+  height: 2.2rem;
   background: $primaryRed;
 }
 
@@ -137,8 +137,24 @@
   }
 }
 
-@include media(">800") {
-  .navPages-action {
-    font-size: 12px !important;
+@include media(">=navfix") {
+  #desktop-menu {
+    li > a {
+    font-size: 11.5px !important;
+    }
+  } 
+
+
+  #menu {
+    background: transparent !important;
+  }
+  #search_query {
+    position: absolute;
+    margin-top: -3rem !important;
+    margin-left: -10.7rem !important;
+    width: 12.5rem !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 0.88rem !important;
   }
 }
+
