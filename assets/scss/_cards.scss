@@ -4,7 +4,10 @@
   color: white;
   border-bottom: $bottomBorder;
   border-radius: 1rem;
-  width: 80% !important;
+}
+
+.card-sku-brand-section {
+  text-align: center !important;
 }
 
 .productCarousel-slide {
@@ -17,19 +20,23 @@
   }
 }
 
-.card-body {
-  background: white;
+.price-section.price-section--withoutTax.current-price.regular-price {
+  text-align: center;
 }
+
 .card-title {
   text-align: center !important;
 }
-.card-sku-brand-section {
-  margin-left: 2.5rem !important;
-  text-align: center !important;
+
+.card-body {
+  background: white;
 }
 
 //(320px - 424px)
 @include media(">phone", "<tablet") {
+  .card-sku-brand-section {
+    text-align: center !important;
+  }
   #body > div.body.content {
     position: relative !important;
     #carousel-active .add-to-cart-button > a {
@@ -93,5 +100,13 @@
   #body > footer > div.container > section {
     position: relative;
     top: unset !important;
+  }
+}
+
+@include media(">=tablet") {
+  #carousel-active .add-to-cart-button > a {
+    position: relative;
+    left: 1.3rem;
+    width: 9rem !important;
   }
 }

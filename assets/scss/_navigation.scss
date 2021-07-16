@@ -16,62 +16,19 @@
   background: $primaryRed;
 }
 
-//(320px - 424px)
-@include media(">phone", "<tablet") {
-  #body
-    > div.header-container.sticky-header
-    > div.header-container.full-width.full-width.in-container
-    > div
-    > div
-    > header
-    > div.header-logo.header-logo--left,
-  .header-padding {
-    background: white !important;
-  }
-  #body
-    > div.header-container.sticky-header
-    > div.header-container.full-width.full-width.in-container
-    > div
-    > div
-    > header
-    > div.header-logo.header-logo--left {
-    display: none;
-  }
-  .bg {
-    height: 10rem;
-    background: #fff;
-    width: 100vw;
-    left: -12rem;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .mobileLogo {
-    width: 70%;
-    margin-bottom: 0.75rem;
-  }
-  .mobileNumber {
-    position: relative;
-    width: 70%;
-    left: 3.3rem;
-    margin-bottom: 2rem;
-  }
-
-  // Mobile Navigation Menu
-  .navPages {
-    background: $primaryRed !important;
-    width: 60%;
-  }
+// Mobile Navigation Menu
+.navPages {
+  background: $primaryRed !important;
+  width: 60%;
 }
+
 #menu {
   background: $primaryRed !important;
 }
 .mobileNavMenu {
   background: $primaryRed !important;
   position: relative;
-  width: 60% !important;
+  width: 30% !important;
   #desktop-menu > h2,
   #mobile-menu > div.category-menu > h2,
   #mobile-menu > div.brand-menu > h2 {
@@ -111,4 +68,8 @@
   #mobile-menu > div.brand-menu > h2 {
     width: 17.269rem;
   }
+}
+
+@include media(">=tablet") {
+  
 }

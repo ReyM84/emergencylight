@@ -70,6 +70,51 @@
   background: white !important;
 }
 
+//(320px - 424px)
+@include media(">phone", "<tablet") {
+  #body
+    > div.header-container.sticky-header
+    > div.header-container.full-width.full-width.in-container
+    > div
+    > div
+    > header
+    > div.header-logo.header-logo--left,
+  .header-padding {
+    background: white !important;
+  }
+  #body
+    > div.header-container.sticky-header
+    > div.header-container.full-width.full-width.in-container
+    > div
+    > div
+    > header
+    > div.header-logo.header-logo--left {
+    display: none;
+  }
+  .bg {
+    height: 10rem;
+    background: #fff;
+    width: 100vw;
+    left: -12rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobileLogo {
+    width: 70%;
+    margin-bottom: 0.75rem;
+  }
+  .mobileNumber {
+    position: relative;
+    width: 70%;
+    left: 3.3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+//Tablet breakpoint
 @include media(">phone", "<lgphone") {
   .pdfButton {
     position: relative;
@@ -78,8 +123,44 @@
   }
 }
 
-@include media(">=lgphone", "<tablet") {
-  .mobileLogo {
+@include media(">=tablet") {
+  #body
+    > div.header-container.sticky-header
+    > div.header-container.full-width.full-width.in-container
+    > div
+    > div
+    > header
+    > div.header-logo.header-logo--left,
+  .header-padding {
+    background: white !important;
+  }
+  #body
+    > div.header-container.sticky-header
+    > div.header-container.full-width.full-width.in-container
+    > div
+    > div
+    > header
+    > div.header-logo.header-logo--left {
     display: none;
+  }
+  .bg {
+    height: 10rem;
+    background: #fff;
+    width: 100vw;
+    left: -12rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobileLogo {
+    width: 50%;
+  }
+  .mobileNumber {
+    position: relative;
+    width: 80%;
+    float: right;
+    top: 1.22em;
   }
 }
