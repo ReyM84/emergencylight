@@ -3,33 +3,40 @@
   background: $primaryRed;
   color: white;
   border-bottom: $bottomBorder;
-  border-radius: 1em;
+  border-radius: 1rem;
   width: 80% !important;
 }
 
 .productCarousel-slide {
-  width: 14em !important;
-  height: 25em;
+  width: 14rem !important;
+  height: 25rem;
 
   &:hover {
     border: 3px solid $primaryRed;
-    border-radius: 1em;
+    border-radius: 1rem;
   }
 }
 
 .card-body {
   background: white;
 }
+.card-title {
+  text-align: center !important;
+}
+.card-sku-brand-section {
+  margin-left: 2.5rem !important;
+  text-align: center !important;
+}
 
 //(320px - 424px)
-@include media(">phone", "<lgphone") {
+@include media(">phone", "<tablet") {
   #body > div.body.content {
     position: relative !important;
     #carousel-active .add-to-cart-button > a {
       background: $primaryRed;
       color: white;
       border-bottom: $bottomBorder;
-      border-radius: 1em;
+      border-radius: 1rem;
       width: 60% !important;
       margin: 0 auto;
     }
@@ -50,18 +57,41 @@
 
     .topC {
       position: relative;
-      top: -12.83em;
+      top: -12.83rem;
     }
 
     .newC {
       position: relative;
-      top: -25.72em;
-      height: 5em;
+      top: -25.72rem;
+      height: 5rem;
     }
-    //Footer
-    #body > footer > div.container > section {
-      position: relative;
-      top: -16em;
-    }
+  }
+}
+
+@include media(">phone", "<lgphone") {
+  //Footer
+  #body > footer > div.container > section {
+    position: relative;
+    top: -16rem;
+  }
+}
+
+// 425px - 767px
+@include media(">=lgphone", "<tablet") {
+  //Carousel sections
+  .card-figure {
+    max-width: 30.5156rem !important;
+  }
+  .topC {
+    top: 0rem !important;
+  }
+
+  .newC {
+    top: 0rem !important;
+    height: unset !important;
+  }
+  #body > footer > div.container > section {
+    position: relative;
+    top: unset !important;
   }
 }

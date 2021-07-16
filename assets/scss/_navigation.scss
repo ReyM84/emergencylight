@@ -1,5 +1,5 @@
 #body > div.header-container.sticky-header > div.top-menu > div {
-  height: 2em;
+  height: 2rem;
 }
 
 #body
@@ -12,17 +12,12 @@
   > a
   > span.navUser-item-cartLabel
   > i {
-  height: 1.5em;
+  height: 1.5rem;
   background: $primaryRed;
 }
 
 //(320px - 424px)
-@include media(">phone", "<lgphone") {
-  .menuC {
-    background: $primaryRed !important;
-    position: relative;
-    z-index: 1000;
-  }
+@include media(">phone", "<tablet") {
   #body
     > div.header-container.sticky-header
     > div.header-container.full-width.full-width.in-container
@@ -43,11 +38,11 @@
     display: none;
   }
   .bg {
-    height: 10em;
+    height: 10rem;
     background: #fff;
     width: 100vw;
-    left: -12em;
-    padding: 0.5em;
+    left: -12rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,15 +50,65 @@
   }
   .mobileLogo {
     width: 70%;
-    margin-bottom: 0.75em;
+    margin-bottom: 0.75rem;
   }
   .mobileNumber {
     position: relative;
     width: 70%;
-    left: 3.3em;
-    margin-bottom: 2em;
+    left: 3.3rem;
+    margin-bottom: 2rem;
   }
+
+  // Mobile Navigation Menu
   .navPages {
     background: $primaryRed !important;
+    width: 60%;
+  }
+}
+#menu {
+  background: $primaryRed !important;
+}
+.mobileNavMenu {
+  background: $primaryRed !important;
+  position: relative;
+  width: 60% !important;
+  #desktop-menu > h2,
+  #mobile-menu > div.category-menu > h2,
+  #mobile-menu > div.brand-menu > h2 {
+    background: rgb(235, 233, 233);
+    color: $primaryRed !important;
+    width: 15.269rem;
+  }
+
+  .searchMobileMenu {
+    width: 12rem !important;
+  }
+
+  #search_query {
+    width: 13.2rem !important;
+    position: relative;
+    top: -0.4em !important;
+    min-height: 2rem !important;
+    position: absolute;
+  }
+}
+
+@include media(">=lgphone", "<tablet") {
+  //Header
+  .mobileLogo {
+    width: 55%;
+  }
+
+  //Mobile Nav Menu
+  .mobileNavMenu {
+    width: 50% !important;
+  }
+  .navPages {
+    width: 50% !important;
+  }
+  #desktop-menu > h2,
+  #mobile-menu > div.category-menu > h2,
+  #mobile-menu > div.brand-menu > h2 {
+    width: 17.269rem;
   }
 }

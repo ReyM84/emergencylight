@@ -77,3 +77,9 @@
     width: 40em !important;
   }
 }
+
+@include media(">=lgphone", "<tablet") {
+  .mobileLogo {
+    display: none;
+  }
+}

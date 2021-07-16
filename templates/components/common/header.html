@@ -88,7 +88,7 @@
 {{#if theme_settings.logo-position '===' 'left'}}
   <div class="navPages-container inside-header left-logo search-container not-sticky searchFix" id="menu" data-menu>
     <nav class="navPages">
-        <div class="navPages-quickSearch right searchbar ">
+        <div class="navPages-quickSearch right searchbar">
             {{> components/common/quick-search}}
         </div>
     </nav>
@@ -113,7 +113,7 @@
 </div>
 {{/if}}
 <div class="clear"></div>
-<div class="mobile-menu navPages-container menuC" id="menu" data-menu>
+<div class="mobile-menu navPages-container mobileNavMenu" id="menu" data-menu>
   <div class="currency-converter">
     <ul class="navPages-list navPages-list--user">
         {{#if currency_selector.currencies.length '>' 1}}
