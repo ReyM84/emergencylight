@@ -1,3 +1,9 @@
+.slick-track {
+  position: relative !important;
+  z-index: 100 !important;
+  left: 2em !important;
+}
+
 
 #body > div.header-container.sticky-header > div.top-menu > div {
   height: 2rem;
@@ -15,6 +21,12 @@
   > i {
   height: 2.2rem;
   background: $primaryRed;
+}
+
+@include media("<800px") {
+  .callNow {
+    display: none !important;
+  }
 }
 
 //(320px - 424px)
@@ -138,6 +150,14 @@
 }
 
 @include media(">=navfix") {
+  .callNow {
+    width: 168px;
+    position: relative;
+    padding-bottom: 0.25rem;
+  }
+  #body > div.body.content > div.container.main > div.home.home-page-with-sidenav.slider-in-container > div > div.main.floated-carousel > div.main-content > div.slider.float.in-container {
+    margin-top: -9rem !important;
+  }
   #menu {
     background: transparent !important;
     border: none;
@@ -153,6 +173,7 @@
   #body > div.header-container.sticky-header > div.main-nav-container.in-container {
     background: $primaryRed;
     border-bottom: 3px solid #8B8B8B;
+    width: 9
   }
 }
 
@@ -165,6 +186,9 @@
 }
 
 @include media(">925px") {
+  .callNow {
+    left: 0.5rem;
+  }
   #desktop-menu {
     li > a {
       font-size: 15px !important;
@@ -198,4 +222,14 @@
   } 
 }
 
-@include media(">=desktop")
+@include media(">=desktop", "<=lgdesktop"){
+  .mobileNumber{
+    position: relative;
+    left: 15rem;
+    height: 5.625rem;
+  }
+
+  #body > div.body.content > div.container.main > div.home.home-page-with-sidenav.slider-in-container > div > div.main.floated-carousel > div.main-content > div.slider.float.in-container {
+    margin-top: -12.7rem;
+  }
+}
