@@ -1,3 +1,4 @@
+
 #body > div.header-container.sticky-header > div.top-menu > div {
   height: 2rem;
 }
@@ -47,7 +48,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
   .mobileLogo {
     width: 70%;
@@ -126,7 +126,7 @@
 
   #search_query {
     position: absolute;
-    margin-top: 1rem
+    margin-top: 1rem;
   }
 
   #menu > nav > div {
@@ -138,23 +138,64 @@
 }
 
 @include media(">=navfix") {
-  #desktop-menu {
-    li > a {
-    font-size: 11.5px !important;
-    }
-  } 
-
-
   #menu {
     background: transparent !important;
+    border: none;
   }
   #search_query {
     position: absolute;
     margin-top: -3rem !important;
     margin-left: -10.7rem !important;
     width: 12.5rem !important;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: "Roboto", sans-serif !important;
     font-size: 0.88rem !important;
+  }
+  #body > div.header-container.sticky-header > div.main-nav-container.in-container {
+    background: $primaryRed;
+    border-bottom: 3px solid #8B8B8B;
   }
 }
 
+@include media(">=navfix", "<926px") {
+  #desktop-menu {
+    li > a {
+      font-size: 11.5px !important;
+    }
+  }
+}
+
+@include media(">925px") {
+  #desktop-menu {
+    li > a {
+      font-size: 15px !important;
+    }
+  }
+  #search_query {
+    position: relative !important;
+    left: 3.01rem !important;
+  }
+  .mobileLogo {
+    width: 400px;
+    margin-bottom: 0.75rem;
+    position: relative;
+    left: -10%;
+  } 
+}
+
+@include media(">=1200px") {
+  #body
+  .navlfix {
+    position: absolute;
+    background-color: $primaryRed !important;
+    height: 2.7rem;
+    width: 10rem;
+    top: 12rem;
+    z-index: 0;
+  }
+
+  .mobileLogo {
+    left: -16%;
+  } 
+}
+
+@include media(">=desktop")
