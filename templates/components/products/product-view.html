@@ -12,28 +12,28 @@
     <div id="product-images-container">
       <!-- MAIN PRODUCT IMAGE CONTAINER -->
       <div class="main-image-container">
-        <div class="productImageSlider slider-for">
-          {{#each product.images}}
-            <li class="productView-images" data-image-gallery>
-              <figure class="productView-image fancy-gallery" rel="productImages" data-fancybox="gallery" data-image-gallery-main
-                  href="{{getImage this 'zoom_size' (cdn ../theme_settings.default_image_product)}}"
-                  data-image-gallery-new-image-url="{{getImage this 'zoom_size' (cdn ../theme_settings.default_image_product)}}"
-                  data-image-gallery-zoom-image-url="{{getImage this 'zoom_size' (cdn ../theme_settings.default_image_product)}}">
-                    <div class="mobile-magnify">
-                      <div class="magnify-icon"><svg class="magnify-icon" title="zoom" alt="zoom"><use xlink:href="#icon-search"></use></svg></div>
-                    </div>
-                  <img src="{{getImage this 'zoom_size' (cdn ../theme_settings.default_image_product)}}" alt="{{this.alt}}" title="{{this.alt}}">
-            </li>
-          {{/each}}
-          {{#if product.images '<=' 0}}
-          <img class="productView-image--default lazyload"
-                     data-sizes="auto"
-                     src="{{cdn 'img/loading.svg'}}"
-                     data-src="{{getImage product.main_image 'product_size' (cdn theme_settings.default_image_product)}}"
-                     alt="{{product.main_image.alt}}" title="{{product.main_image.alt}}" data-main-image>
-          {{/if}}
-          <div class="clear"></div>
-        </div>
+              <div class="productImageSlider slider-for">
+                {{#each product.images}}
+                  <li class="productView-images" data-image-gallery>
+                    <figure class="productView-image fancy-gallery" rel="productImages" data-fancybox="gallery" data-image-gallery-main
+                        href="{{getImage this 'zoom_size' (cdn ../theme_settings.default_image_product)}}"
+                        data-image-gallery-new-image-url="{{getImage this 'zoom_size' (cdn ../theme_settings.default_image_product)}}"
+                        data-image-gallery-zoom-image-url="{{getImage this 'zoom_size' (cdn ../theme_settings.default_image_product)}}">
+                          <div class="mobile-magnify">
+                            <div class="magnify-icon"><svg class="magnify-icon" title="zoom" alt="zoom"><use xlink:href="#icon-search"></use></svg></div>
+                          </div>
+                        <img src="{{getImage this 'zoom_size' (cdn ../theme_settings.default_image_product)}}" alt="{{this.alt}}" title="{{this.alt}}">
+                  </li>
+                {{/each}}
+                {{#if product.images '<=' 0}}
+                <img class="productView-image--default lazyload"
+                           data-sizes="auto"
+                           src="{{cdn 'img/loading.svg'}}"
+                           data-src="{{getImage product.main_image 'product_size' (cdn theme_settings.default_image_product)}}"
+                           alt="{{product.main_image.alt}}" title="{{product.main_image.alt}}" data-main-image>
+                {{/if}}
+                <div class="clear"></div>
+          </div>
         <div class="clear"></div>
       </div>
       <div class="clear"></div>

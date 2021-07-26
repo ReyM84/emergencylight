@@ -31,4 +31,52 @@
     > div {
     background: transparent !important;
   }
+
+  .padTopProduct {
+    padding-top: 3em !important;
+  }
+
+  #product-page-no-sidenav
+    > div.productView.thumbnail-unclicked.qty-box-visible {
+    margin-top: -12em !important;
+  }
+
+  #product-images-container > div.main-image-container > div.productImageSlider.slider-for.slick-initialized.slick-slider.ready > div > div > div.slick-slide.slick-current.slick-active > div > li > figure > img {
+      position: relative !important;
+      right: 1.8rem !important;
+  }
+
+  #carousel-active
+    > ul
+    > section
+    > div
+    > div
+    > li
+    > article
+    > div
+    > div.card-text
+    > div.card-text.add-to-cart-button {
+    width: 11em !important;
+  }
+
+  #tab-description > table {
+    width: 19.5rem !important;
+    font-size: 0.5rem;
+  }
+
+  td {
+    padding: 0.5rem;
+  }
+
+  #form-action-addToCart {
+    background: $primaryRed !important;
+    border-radius: 1rem !important;
+    width: 12.5rem !important;
+    margin: 0 auto !important;
+  }
+
+  .centerButton {
+    display: flex;
+    justify-content: center;
+  }
 }
