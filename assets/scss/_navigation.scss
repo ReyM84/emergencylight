@@ -186,8 +186,11 @@
 }
 
 @include media(">925px") {
+  #body > div.body.content > div.container.main > div.home.home-page-with-sidenav.slider-in-container > div > div.main.floated-carousel > div.main-content > div.slider.float.in-container {
+    margin-top: -9.54rem !important;
+  }
   .callNow {
-    left: 0.5rem;
+    margin: 0 auto;
   }
   #desktop-menu {
     li > a {
@@ -232,4 +235,11 @@
   #body > div.body.content > div.container.main > div.home.home-page-with-sidenav.slider-in-container > div > div.main.floated-carousel > div.main-content > div.slider.float.in-container {
     margin-top: -12.7rem;
   }
+}
+
+
+
+
+.heroCarousel-image {
+  width: 100% !important; 
 }

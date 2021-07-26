@@ -1,0 +1,34 @@
+//(320px - 424px)
+@include media(">phone", "<tablet") {
+  #product-images-container
+    > div.main-image-container
+    > div.productImageSlider.slider-for.slick-initialized.slick-slider.ready
+    > div
+    > div
+    > div.slick-slide.slick-current.slick-active
+    > div
+    > li
+    > figure
+    > img {
+    width: 300px !important;
+  }
+
+  #product-images-container > div.main-image-container,
+  #product-images-container
+    > div.main-image-container
+    > div.productImageSlider.slider-for.slick-initialized.slick-slider.ready,
+  #product-images-container
+    > div.main-image-container
+    > div.productImageSlider.slider-for.slick-initialized.slick-slider.ready
+    > div
+    > div
+    > div.slick-slide.slick-current.slick-active,
+  #product-images-container
+    > div.slider-nav.slick-initialized.slick-slider
+    > div
+    > div
+    > div
+    > div {
+    background: transparent !important;
+  }
+}
