@@ -1,5 +1,36 @@
+#product-page-no-sidenav
+  > div.productView.thumbnail-unclicked.qty-box-visible
+  > article
+  > ul
+  > li.tab.warranty,
+#body
+  > div.body.content
+  > div
+  > div.recommended-visibility
+  > div.product.main.left.no-sidenav
+  > div
+  > div
+  > div.similar-products-by-views
+  > h2,
+#carousel-active > div > h2 {
+  background: $primaryRed !important;
+  border-bottom: 3px solid $bottomBorder !important;
+}
+
+#form-action-addToCart {
+  background: $primaryRed !important;
+  border-bottom: 3px solid $bottomBorder !important;
+  border-radius: 1rem !important;
+  width: 12.5rem !important;
+  margin: 0 auto !important;
+}
+.centerButton {
+  display: flex;
+  justify-content: center;
+}
+
 //(320px - 424px)
-@include media(">phone", "<tablet") {
+@include media("<lgphone") {
   #product-images-container
     > div.main-image-container
     > div.productImageSlider.slider-for.slick-initialized.slick-slider.ready
@@ -32,6 +63,24 @@
     background: transparent !important;
   }
 
+  #product-images-container
+    > div.main-image-container
+    > div.productImageSlider.slider-for.slick-initialized.slick-slider.ready
+    > div
+    > div
+    > div
+    > div
+    > li
+    > figure
+    > img {
+    margin-top: 4rem !important;
+  }
+
+  #product-images-container > div.slider-nav.slick-initialized.slick-slider {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
   .padTopProduct {
     padding-top: 3em !important;
   }
@@ -41,9 +90,18 @@
     margin-top: -12em !important;
   }
 
-  #product-images-container > div.main-image-container > div.productImageSlider.slider-for.slick-initialized.slick-slider.ready > div > div > div.slick-slide.slick-current.slick-active > div > li > figure > img {
-      position: relative !important;
-      right: 1.8rem !important;
+  #product-images-container
+    > div.main-image-container
+    > div.productImageSlider.slider-for.slick-initialized.slick-slider.ready
+    > div
+    > div
+    > div.slick-slide.slick-current.slick-active
+    > div
+    > li
+    > figure
+    > img {
+    position: relative !important;
+    right: 1.8rem !important;
   }
 
   #carousel-active
@@ -68,15 +126,112 @@
     padding: 0.5rem;
   }
 
-  #form-action-addToCart {
-    background: $primaryRed !important;
-    border-radius: 1rem !important;
-    width: 12.5rem !important;
-    margin: 0 auto !important;
+  a.button {
+    min-width: 132.14px !important;
   }
 
-  .centerButton {
-    display: flex;
-    justify-content: center;
+  #add-to-cart-wrapper > div.form-field.form-field--increments {
+    position: relative !important;
+    left: 4rem !important;
+  }
+
+  #carousel-active
+    > div
+    > ul
+    > section
+    > div
+    > div
+    > li.productCarousel-slide.product.slick-slide.slick-current,
+  #carousel-active > div > ul > section > div > div,
+  #carousel-active > div > ul > section > div > div > li {
+    background: white !important;
+  }
+
+  #body > footer > div.container > section {
+    margin-top: 20rem !important;
+  }
+}
+
+//(425px - 424px)
+@include media(">=lgphone", "<tablet") {
+    
+  #body {
+    margin-top: 3rem !important;
+  }
+
+  #product-images-container > div.main-image-container > div.productImageSlider.slider-for.slick-initialized.slick-slider.ready > div {
+      margin-top: -8rem !important; 
+  }
+
+  #body > div.header-container.sticky-header > div.bg > a:nth-child(1) > img {
+    margin-left: 1rem;
+  }
+
+  #body > div.header-container.sticky-header > div.bg > a:nth-child(1) > img {
+    margin-top: 1.5rem;
+    width: 25.125rem !important;
+  }
+
+  #product-images-container > div.main-image-container {
+    background: white !important;
+  }
+
+  #product-images-container
+    > div.main-image-container
+    > div.productImageSlider.slider-for.slick-initialized.slick-slider.ready
+    > div
+    > div
+    > div
+    > div
+    > li
+    > figure
+    > img {
+    margin-left: -2rem !important;
+  }
+
+  #product-images-container
+    > div.main-image-container
+    > div.productImageSlider.slider-for.slick-initialized.slick-slider.ready
+    > div
+    > div
+    > div.slick-slide.slick-current.slick-active {
+    background: white !important;
+  }
+
+  #product-images-container
+    > div.slider-nav.slick-initialized.slick-slider
+    > div
+    > div
+    > div.slick-slide.slick-current.slick-active
+    > div,
+  #product-images-container
+    > div.slider-nav.slick-initialized.slick-slider
+    > div
+    > div
+    > div.slick-slide.slick-active.last
+    > div,
+  #product-images-container
+    > div.slider-nav.slick-initialized.slick-slider
+    > div
+    > div
+    > div
+    > div {
+    background: white !important;
+  }
+
+  #carousel-active > div > ul > section > div {
+    background: white !important;
+  }
+
+  #carousel-active > div > ul > section > div > div > li {
+    background: white !important;
+  }
+
+  #tab-description > table {
+    width: 80vw !important;
+  }
+
+  td {
+    padding: 0.5rem;
   }
 }

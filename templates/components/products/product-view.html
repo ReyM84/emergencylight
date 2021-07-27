@@ -50,7 +50,7 @@
       {{#if theme_settings.product_thumbnail_carousel '===' false}}
       <!-- PRODUCT IMAGE THUMBNAIL CAROUSEL -->
       <div class="slider-nav no-carousel" style="display: block;">
-        {{#each product.images}}
+        {{#each product.images}} 
           <img class="thumbnail-images" src="{{getImage this 'thumb_size' (cdn ../theme_settings.default_image_product)}}" alt="{{this.alt}}" title="{{this.alt}}">
         {{/each}}
       </div>
