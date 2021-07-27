@@ -154,13 +154,15 @@
 
 //(425px - 424px)
 @include media(">=lgphone", "<tablet") {
-    
   #body {
     margin-top: 3rem !important;
   }
 
-  #product-images-container > div.main-image-container > div.productImageSlider.slider-for.slick-initialized.slick-slider.ready > div {
-      margin-top: -8rem !important; 
+  #product-images-container
+    > div.main-image-container
+    > div.productImageSlider.slider-for.slick-initialized.slick-slider.ready
+    > div {
+    margin-top: -4rem !important;
   }
 
   #body > div.header-container.sticky-header > div.bg > a:nth-child(1) > img {
@@ -233,5 +235,36 @@
 
   td {
     padding: 0.5rem;
+  }
+
+  #carousel-active > div > ul > section > div > div > li {
+    border: 45px solid white;
+  }
+
+  #carousel-active
+    > div
+    > ul
+    > section
+    > div
+    > div
+    > li:nth-child(2)
+    > article
+    > div
+    > div.card-text
+    > div.card-text.add-to-cart-button
+    > a {
+    width: 10rem !important;
+  }
+
+  #body > div.header-container.sticky-header {
+    background: white !important;
+  }
+
+  #carousel-active > div > ul > section > ul {
+    background: white !important;
+  }
+
+  #carousel-active > div > ul > section > div > div {
+    background: white !important;
   }
 }
