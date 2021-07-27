@@ -23,7 +23,7 @@
   height: 15em;
   background: white;
   h5 {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: "Roboto", sans-serif !important;
     font-weight: 900;
     font-size: 0.9375rem;
     line-height: 1.875rem;
@@ -31,7 +31,7 @@
     color: white;
     width: 100%;
     text-align: center;
-    border-bottom: 3px solid #8B8B8B;
+    border-bottom: 3px solid #8b8b8b;
   }
   .fullSpecs {
     position: relative;
@@ -168,3 +168,50 @@
     top: 1.22em;
   }
 }
+
+//Call Now
+@include media(">1200px") {
+  .callNow {
+    margin-left: 3.5rem !important;
+  }
+}
+@include media(">1300px") {
+  .callNow {
+    margin-left: 7.5rem !important;
+  }
+}
+@include media(">1400px") {
+  .callNow {
+    margin-left: 10rem !important;
+  }
+}
+@include media(">1500px") {
+  .callNow {
+    margin-left: 14rem !important;
+  }
+}
+@include media(">1600px") {
+  .callNow {
+    margin-left: 18rem !important;
+  }
+}
+@include media(">1700px") {
+  .callNow {
+    margin-left: 22rem !important;
+  }
+}
+@include media(">1800px") {
+  .callNow {
+    margin-left: 25rem !important;
+  }
+}
+@include media(">1900px") {
+  .callNow {
+    margin-left: 28rem !important;
+  }
+}
+// @include media(">1200px") {
+//   .callNow {
+//     margin-left: 3.5rem !important;
+//   }
+// }

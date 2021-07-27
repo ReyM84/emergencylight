@@ -1,0 +1,8 @@
+#body
+  > div.body.content
+  > div
+  > div.category.main.top-pagination-hidden.grid-default.product-filtering-disabled
+  > h2 {
+  background: $primaryRed !important;
+  border-bottom: 3px solid $bottomBorder;
+}
