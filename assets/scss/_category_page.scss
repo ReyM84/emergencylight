@@ -6,3 +6,29 @@
   background: $primaryRed !important;
   border-bottom: 3px solid $bottomBorder;
 }
+
+#product-listing-container
+  > form.both-grid-default
+  > ul.productGrid--maxCol4.grid-default
+  > ul
+  > li
+  > article
+  > div
+  > div.card-text
+  > div.card-text.add-to-cart-button
+  > a,
+#product-listing-container
+  > form.both-grid-default
+  > ul.productGrid--maxCol4.grid-default
+  > ul
+  > li
+  > article
+  > div
+  > div.card-text
+  > div.card-text.add-to-cart-button
+  > a {
+  background: $primaryRed !important;
+  color: white !important;
+  border-bottom: 3px solid $bottomBorder !important;
+  border-radius: 1rem;
+}
