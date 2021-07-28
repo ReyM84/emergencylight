@@ -373,4 +373,18 @@
   }
 }
 
+@include media("<425px") {
+  #body
+  > div.header-container.sticky-header
+  > div.header-container.full-width.full-width.in-container {
+  margin-top: 5.9rem !important;
+}
+}
 
+
+
+// One option product
+
+// Two option product
+
+// Three option product

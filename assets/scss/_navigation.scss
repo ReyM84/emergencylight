@@ -237,9 +237,12 @@
   }
 }
 
-
-
-
 .heroCarousel-image {
   width: 100% !important; 
+}
+
+@include media(">=800px", "<=800px"){
+  .callNow {
+    display: none;
+  }
 }

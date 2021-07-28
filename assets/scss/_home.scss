@@ -74,6 +74,13 @@
   background: white !important;
 }
 
+#slick-slide00 > div > div > img,
+#slick-slide01 > div > div > img,
+#slick-slide02 > div > div > img,
+#slick-slide03 > div > div > img {
+  margin-left: -2rem !important;
+}
+
 //(320px - 424px)
 @include media(">phone", "<tablet") {
   #body
@@ -96,25 +103,45 @@
     display: none;
   }
   .bg {
-    height: 10rem;
     background: #fff;
     width: 100vw;
     left: -12rem;
     padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .mobileLogo {
     width: 70%;
-    margin-bottom: 0.75rem;
+    padding-top: 2rem;
+    margin-top: 3.5rem !important;
   }
   .mobileNumber {
     position: relative;
     width: 70%;
     left: 3.3rem;
     margin-bottom: 2rem;
+  }
+}
+
+#body > div.header-container.sticky-header > div.bg > a:nth-child(1) {
+  height: 9.25rem !important;
+}
+
+#body
+  > div.body.content
+  > div.container.main
+  > div.home.home-page-with-sidenav.slider-in-container
+  > div
+  > div.main.floated-carousel
+  > div.main-content {
+  margin-top: 5rem;
+}
+
+@include media(">=425px", "<tablet") {
+  .mobileLogo {
+    max-width: 80% !important;
+    margin-top: -2rem !important;
+  }
+  .mobileNumber {
+    width: 70%;
   }
 }
 

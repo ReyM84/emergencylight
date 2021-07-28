@@ -30,7 +30,7 @@
     width: remCalc(40px);
 
     &::before {
-        background-position: 50%;
+        background-position: 60%;
         background-repeat: no-repeat;
         background-size: 100%;
         display: block;
@@ -41,7 +41,7 @@
     &:hover,
     &:focus {
         @include carouselOpaqueBackgrounds($slick-arrow-bgColor); // 1
-        background-position: 50%;
+        background-position: 60%;
         background-repeat: no-repeat;
         background-size: 100%;
     }
