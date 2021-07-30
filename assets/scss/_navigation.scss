@@ -97,13 +97,13 @@
     width: 12rem !important;
   }
 
-  #search_query {
-    width: 13.2rem !important;
-    position: relative;
-    top: -0.4em !important;
-    min-height: 2rem !important;
-    position: absolute;
-  }
+  // #search_query {
+  //   width: 13.2rem !important;
+  //   position: relative;
+  //   top: -0.4em !important;
+  //   min-height: 2rem !important;
+  //   position: absolute;
+  // }
 }
 
 @include media(">=lgphone", "<tablet") {
@@ -136,10 +136,10 @@
     width: 200px !important;
   }
 
-  #search_query {
-    position: absolute;
-    margin-top: 1rem;
-  }
+  // #search_query {
+  //   position: absolute;
+  //   margin-top: 1rem;
+  // }
 
   #menu > nav > div {
     background: transparent !important;
@@ -162,14 +162,14 @@
     background: transparent !important;
     border: none;
   }
-  #search_query {
-    position: absolute;
-    margin-top: -3rem !important;
-    margin-left: -10.7rem !important;
-    width: 12.5rem !important;
-    font-family: "Roboto", sans-serif !important;
-    font-size: 0.88rem !important;
-  }
+  // #search_query {
+  //   position: absolute;
+  //   margin-top: -3rem !important;
+  //   margin-left: -10.7rem !important;
+  //   width: 12.5rem !important;
+  //   font-family: "Roboto", sans-serif !important;
+  //   font-size: 0.88rem !important;
+  // }
   #body > div.header-container.sticky-header > div.main-nav-container.in-container {
     background: $primaryRed;
     border-bottom: 3px solid #8B8B8B;
@@ -197,10 +197,10 @@
       font-size: 15px !important;
     }
   }
-  #search_query {
-    position: relative !important;
-    left: 3.01rem !important;
-  }
+  // #search_query {
+  //   position: relative !important;
+  //   left: 3.01rem !important;
+  // }
   .mobileLogo {
     width: 400px;
     margin-bottom: 0.75rem;

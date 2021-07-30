@@ -338,10 +338,10 @@
 
 //801 - 1365
 @include media(">=navfix", "<desktop") {
-  #search_query {
-    position: relative !important;
-    left: 42.5rem;
-  }
+  // #search_query {
+  //   position: relative !important;
+  //   left: 42.5rem;
+  // }
 
   #body > div.header-container.sticky-header > div.bg > a:nth-child(1) > img {
     width: 30rem;
@@ -362,10 +362,10 @@
 
 //1366 - 1920
 @include media(">=desktop") {
-  #search_query {
-    position: relative !important;
-    left: 68rem !important;
-  }
+  // #search_query {
+  //   position: relative !important;
+  //   left: 68rem !important;
+  // }
 
   #body > div.header-container.sticky-header > div.bg > a:nth-child(1) > img {
     margin-top: 2rem;
@@ -375,16 +375,38 @@
 
 @include media("<425px") {
   #body
-  > div.header-container.sticky-header
-  > div.header-container.full-width.full-width.in-container {
-  margin-top: 5.9rem !important;
+    > div.header-container.sticky-header
+    > div.header-container.full-width.full-width.in-container {
+    margin-top: 5.9rem !important;
+  }
 }
-}
-
-
 
 // One option product
 
 // Two option product
+@include media(">426px", "<800px") {
+  #product-page-no-sidenav
+    > div.productView.thumbnail-unclicked.qty-box-visible
+    > section
+    > div
+    > section
+    > div.productView-options
+    > form
+    > div:nth-child(3)
+    > div:nth-child(2) {
+    width: 100vw !important;
+    position: relative;
+    right: 1rem !important;
+  }
+}
+
+#product-images-container
+  > div.slider-nav.slick-initialized.slick-slider
+  > div
+  > div
+  > div
+  > div {
+  background: white !important;
+}
 
 // Three option product

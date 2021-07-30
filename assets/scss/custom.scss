@@ -2,12 +2,14 @@
 $primaryRed: #b1130c;
 $commonLight: #cac9c9;
 $bottomBorder: #808080;
+$redBorder: "1px solid red";
 
 @import "./home";
 @import "./cards";
 @import "./navigation";
 @import "./product_page";
 @import "./category_page";
+@import "./cart";
 
 
 #body > div.body.content > div.container.main,
@@ -20,8 +22,4 @@ $bottomBorder: #808080;
   > header,
 #body {
   background: white;
-}
-
-.testthis {
-  border: 1px solid red;
 }

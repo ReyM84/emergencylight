@@ -1,4 +1,5 @@
 @import "./mquery.scss";
+@import "./settings/global/z-index/z-index";
 
 // Home Page
 .custom-pages-nav,
@@ -72,13 +73,6 @@
 
 .search-container {
   background: white !important;
-}
-
-#slick-slide00 > div > div > img,
-#slick-slide01 > div > div > img,
-#slick-slide02 > div > div > img,
-#slick-slide03 > div > div > img {
-  margin-left: -2rem !important;
 }
 
 //(320px - 424px)
@@ -237,8 +231,25 @@
     margin-left: 28rem !important;
   }
 }
-// @include media(">1200px") {
-//   .callNow {
-//     margin-left: 3.5rem !important;
+
+// Carousel width fix
+
+#slick-slide00 > div > div > img,
+#slick-slide01 > div > div > img,
+#slick-slide02 > div > div > img,
+#slick-slide03 > div > div > img {
+  margin-left: -2rem !important;
+}
+
+// Carousel 800px fix
+// @include media(">=navfix", ">1366px") {
+//   #slick-slide00 > div > div > img,
+//   #slick-slide01 > div > div > img,
+//   #slick-slide02 > div > div > img {
+//     height: 100% !important;
 //   }
 // }
+
+#carousel-active > div {
+  display: none !important;
+}
