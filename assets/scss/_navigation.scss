@@ -3,10 +3,17 @@
   z-index: 100 !important;
   left: 2em !important;
 }
-
-
 #body > div.header-container.sticky-header > div.top-menu > div {
   height: 2rem;
+}
+
+#side-categories {
+  margin-top: 10rem !important;
+  width: 164px !important;
+}
+
+.categories {
+  width: 152px !important;
 }
 
 #body
@@ -41,36 +48,6 @@
   .header-padding {
     background: white !important;
   }
-  #body
-    > div.header-container.sticky-header
-    > div.header-container.full-width.full-width.in-container
-    > div
-    > div
-    > header
-    > div.header-logo.header-logo--left {
-    display: none;
-  }
-  .bg {
-    height: 10rem;
-    background: #fff;
-    width: 100vw;
-    left: -12rem;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .mobileLogo {
-    width: 70%;
-    margin-bottom: 0.75rem;
-  }
-  .mobileNumber {
-    position: relative;
-    width: 70%;
-    left: 3.3rem;
-    margin-bottom: 2rem;
-  }
 
   // Mobile Navigation Menu
   .navPages {
@@ -96,21 +73,10 @@
   .searchMobileMenu {
     width: 12rem !important;
   }
-
-  // #search_query {
-  //   width: 13.2rem !important;
-  //   position: relative;
-  //   top: -0.4em !important;
-  //   min-height: 2rem !important;
-  //   position: absolute;
-  // }
 }
 
 @include media(">=lgphone", "<tablet") {
   //Header
-  .mobileLogo {
-    width: 55%;
-  }
 
   //Mobile Nav Menu
   .navPages {
@@ -136,44 +102,23 @@
     width: 200px !important;
   }
 
-  // #search_query {
-  //   position: absolute;
-  //   margin-top: 1rem;
-  // }
-
-  #menu > nav > div {
-    background: transparent !important;
-  }
-  #menu {
+  #menu > nav > div,  #menu {
     background: transparent !important;
   }
 }
 
 @include media(">=navfix") {
-  .callNow {
-    width: 168px;
-    position: relative;
-    padding-bottom: 0.25rem;
-  }
-  #body > div.body.content > div.container.main > div.home.home-page-with-sidenav.slider-in-container > div > div.main.floated-carousel > div.main-content > div.slider.float.in-container {
-    margin-top: -9rem !important;
-  }
   #menu {
     background: transparent !important;
     border: none;
   }
-  // #search_query {
-  //   position: absolute;
-  //   margin-top: -3rem !important;
-  //   margin-left: -10.7rem !important;
-  //   width: 12.5rem !important;
-  //   font-family: "Roboto", sans-serif !important;
-  //   font-size: 0.88rem !important;
-  // }
-  #body > div.header-container.sticky-header > div.main-nav-container.in-container {
+
+  #body
+    > div.header-container.sticky-header
+    > div.main-nav-container.in-container {
     background: $primaryRed;
-    border-bottom: 3px solid #8B8B8B;
-    width: 9
+    border-bottom: 3px solid #8b8b8b;
+    width: 9;
   }
 }
 
@@ -186,32 +131,15 @@
 }
 
 @include media(">925px") {
-  #body > div.body.content > div.container.main > div.home.home-page-with-sidenav.slider-in-container > div > div.main.floated-carousel > div.main-content > div.slider.float.in-container {
-    margin-top: -9.54rem !important;
-  }
-  .callNow {
-    margin: 0 auto;
-  }
   #desktop-menu {
     li > a {
       font-size: 15px !important;
     }
-  }
-  // #search_query {
-  //   position: relative !important;
-  //   left: 3.01rem !important;
-  // }
-  .mobileLogo {
-    width: 400px;
-    margin-bottom: 0.75rem;
-    position: relative;
-    left: -10%;
-  } 
+ }
 }
 
 @include media(">=1200px") {
-  #body
-  .navlfix {
+  #body .navlfix {
     position: absolute;
     background-color: $primaryRed !important;
     height: 2.7rem;
@@ -219,30 +147,19 @@
     top: 12rem;
     z-index: 0;
   }
-
-  .mobileLogo {
-    left: -16%;
-  } 
 }
 
-@include media(">=desktop", "<=lgdesktop"){
-  .mobileNumber{
-    position: relative;
-    left: 15rem;
-    height: 5.625rem;
-  }
 
-  #body > div.body.content > div.container.main > div.home.home-page-with-sidenav.slider-in-container > div > div.main.floated-carousel > div.main-content > div.slider.float.in-container {
-    margin-top: -12.7rem;
-  }
+
+#search_query {
+  width: 152px;
+  position: relative !important;
+  top: 4rem;
+  left: -9rem;
+  background-color: transparent !important;
 }
 
-.heroCarousel-image {
-  width: 100% !important; 
+#side-categories {
+  margin-top: 9rem !important;
 }
 
-@include media(">=800px", "<=800px"){
-  .callNow {
-    display: none;
-  }
-}

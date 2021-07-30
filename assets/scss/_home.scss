@@ -1,6 +1,11 @@
 @import "./mquery.scss";
 @import "./settings/global/z-index/z-index";
 
+// Remove logo banner
+#body > div.header-container.sticky-header > div.header-container.full-width.full-width.in-container > div > div > header {
+  display: none;
+}
+
 // Home Page
 .custom-pages-nav,
 #side-categories > div.categories > h2,
@@ -18,11 +23,36 @@
   padding-left: 5px;
 }
 
+#body
+  > div.body.content
+  > div.container.main
+  > div.home.home-page-with-sidenav.slider-in-container
+  > div
+  > div.main.floated-carousel
+  > div.main-content
+  > div.slider.float.in-container {
+  background: white !important;
+}
+
+#body
+  > div.body.content
+  > div.container.main
+  > div.home.home-page-with-sidenav.slider-in-container
+  > div
+  > div.main.floated-carousel
+  > div.main-content
+  > div.slider.float.in-container
+  > section
+  > div {
+  position: relative;
+}
+
 .clientSection {
   position: relative;
   display: flex;
   height: 15em;
   background: white;
+  max-width: 720px;
   h5 {
     font-family: "Roboto", sans-serif !important;
     font-weight: 900;
@@ -30,7 +60,6 @@
     line-height: 1.875rem;
     background: $primaryRed;
     color: white;
-    width: 100%;
     text-align: center;
     border-bottom: 3px solid #8b8b8b;
   }
@@ -67,15 +96,89 @@
   }
 }
 
-.mySlides {
+//Responsive Carousel, Clients, and Call Now
+.callNow {
+  position: absolute;
+  width: 152px;
+}
+
+@include media(">=navfix") {
+#body
+  > div.header-container.sticky-header
+  > div.header-container.full-width.full-width.in-container
+  > div
+  > div
+  > header
+  > div.header-logo.header-logo--left {
   display: none;
 }
+}
+// .mySlides {
+//   display: none;
+// }
 
 .search-container {
   background: white !important;
 }
 
-//(320px - 424px)
+//Custom header
+.bg {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1rem;
+  justify-content: space-between;
+  position: relative;
+}
+
+//Sizing for logo and number
+@include media("<lgphone") {
+  .mobileNumber,
+  .mobileLogo {
+    width: 175px;
+  }
+}
+@include media(">=lgphone", "<tablet") {
+  .mobileNumber,
+  .mobileLogo {
+    max-width: 200px !important;
+    // border: 1px solid red;
+  }
+
+  .mobileNumber {
+    position: relative;
+    top: 1.8rem !important;
+    padding-left: -2rem;
+    position: relative;
+    top: 50%;
+  }
+
+  .mobileLogo {
+    padding-left: 2rem;
+  }
+}
+@include media(">desktop") {
+  .mobileNumber,
+  .mobileLogo {
+    max-width: 200px !important;
+    // border: 1px solid red;
+  }
+
+  .mobileNumber {
+    position: relative;
+    top: 1.8rem !important;
+    padding-left: -2rem;
+    position: relative;
+    top: 50%;
+  }
+
+  .mobileLogo {
+    padding-left: 2rem;
+  }
+}
+
+//(320px - 768px)
 @include media(">phone", "<tablet") {
   #body
     > div.header-container.sticky-header
@@ -86,56 +189,6 @@
     > div.header-logo.header-logo--left,
   .header-padding {
     background: white !important;
-  }
-  #body
-    > div.header-container.sticky-header
-    > div.header-container.full-width.full-width.in-container
-    > div
-    > div
-    > header
-    > div.header-logo.header-logo--left {
-    display: none;
-  }
-  .bg {
-    background: #fff;
-    width: 100vw;
-    left: -12rem;
-    padding: 0.5rem;
-  }
-  .mobileLogo {
-    width: 70%;
-    padding-top: 2rem;
-    margin-top: 3.5rem !important;
-  }
-  .mobileNumber {
-    position: relative;
-    width: 70%;
-    left: 3.3rem;
-    margin-bottom: 2rem;
-  }
-}
-
-#body > div.header-container.sticky-header > div.bg > a:nth-child(1) {
-  height: 9.25rem !important;
-}
-
-#body
-  > div.body.content
-  > div.container.main
-  > div.home.home-page-with-sidenav.slider-in-container
-  > div
-  > div.main.floated-carousel
-  > div.main-content {
-  margin-top: 5rem;
-}
-
-@include media(">=425px", "<tablet") {
-  .mobileLogo {
-    max-width: 80% !important;
-    margin-top: -2rem !important;
-  }
-  .mobileNumber {
-    width: 70%;
   }
 }
 
@@ -159,97 +212,4 @@
   .header-padding {
     background: white !important;
   }
-  #body
-    > div.header-container.sticky-header
-    > div.header-container.full-width.full-width.in-container
-    > div
-    > div
-    > header
-    > div.header-logo.header-logo--left {
-    display: none;
-  }
-  .bg {
-    height: 10rem;
-    background: #fff;
-    width: 100vw;
-    left: -12rem;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .mobileLogo {
-    width: 50%;
-  }
-  .mobileNumber {
-    position: relative;
-    width: 80%;
-    float: right;
-    top: 1.22em;
-  }
-}
-
-//Call Now
-@include media(">1200px") {
-  .callNow {
-    margin-left: 3.5rem !important;
-  }
-}
-@include media(">1300px") {
-  .callNow {
-    margin-left: 7.5rem !important;
-  }
-}
-@include media(">1400px") {
-  .callNow {
-    margin-left: 10rem !important;
-  }
-}
-@include media(">1500px") {
-  .callNow {
-    margin-left: 14rem !important;
-  }
-}
-@include media(">1600px") {
-  .callNow {
-    margin-left: 18rem !important;
-  }
-}
-@include media(">1700px") {
-  .callNow {
-    margin-left: 22rem !important;
-  }
-}
-@include media(">1800px") {
-  .callNow {
-    margin-left: 25rem !important;
-  }
-}
-@include media(">1900px") {
-  .callNow {
-    margin-left: 28rem !important;
-  }
-}
-
-// Carousel width fix
-
-#slick-slide00 > div > div > img,
-#slick-slide01 > div > div > img,
-#slick-slide02 > div > div > img,
-#slick-slide03 > div > div > img {
-  margin-left: -2rem !important;
-}
-
-// Carousel 800px fix
-// @include media(">=navfix", ">1366px") {
-//   #slick-slide00 > div > div > img,
-//   #slick-slide01 > div > div > img,
-//   #slick-slide02 > div > div > img {
-//     height: 100% !important;
-//   }
-// }
-
-#carousel-active > div {
-  display: none !important;
 }
