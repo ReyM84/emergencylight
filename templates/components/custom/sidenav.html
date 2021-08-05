@@ -1,4 +1,52 @@
 <div class="sideCategoryList desktop vertical in-body" id="side-categories" data-menu>
+  <div class="container">
+    {{{ snippet "forms_search"}}}
+    <form class="form" action="{{urls.search}}">
+      <fieldset class="form-fieldset">
+        <div class="form-field">
+          <label class="u-hiddenVisually" for="search_query"
+            >{{lang "search.quick_search.input_label"}}</label
+          >
+          <input
+            class="form-input test"
+            data-search-quick
+            name="search_query"
+            id="search_query"
+            data-error-message="{{lang 'search.error.empty_field'}}"
+            placeholder="{{lang 'search.quick_search.input_placeholder'}}"
+            autocomplete="off"
+          />
+          <div class="search-icon">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+          <input
+            class="button button--primary form-prefixPostfix-button--postfix"
+            type="submit"
+            value=""
+          />
+        </div>
+      </fieldset>
+      <div class="clear"></div>
+    </form>
+    <!-- <a href="#" class="reset quicksearch" aria-label="reset search" role="button">
+      <span class="reset" aria-hidden="true">Reset Search</span>
+    </a> -->
+    <a
+      href="#"
+      class="modal-close custom-quick-search"
+      aria-label="{{lang 'common.close'}}"
+      role="button"
+    >
+      <span aria-hidden="true">&#215;</span>
+    </a>
+    <!-- <section class="quickSearchResults" data-bind="html: results">
+    </section> -->
+  </div>
+  <div class="callDiv">
+    <a href="tel:+18002825600">
+      <img class="callNow" src="https://i.imgur.com/HRHsuzb.jpg" alt="">
+    </a>
+  </div>
     <div class="categories">
       <h2 class="container-header">{{lang 'sidenav_headers.categories_header'}}</h2>
         <div class="category-list">
