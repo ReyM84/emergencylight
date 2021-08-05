@@ -1,0 +1,70 @@
+//Responsive Carousel, Clients, and Call Now
+
+.callNow {
+  position: absolute;
+  width: 152px;
+}
+
+#search_query {
+  width: 152px;
+  position: relative;
+  top: 6.5rem;
+  right: 6.56rem;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 0.9rem !important;
+}
+
+@include media(">=navfix") {
+  #side-categories {
+    margin-top: 12rem !important;
+  }
+
+  .callNow {
+    top: 3.3rem;
+  }
+}
+
+#side-categories {
+  margin-top: 13rem !important;
+  width: 164px !important;
+}
+
+.categories {
+  width: 152px !important;
+}
+
+//Call Now Graphic
+// @include media("<800px") {
+//   .callNow {
+//     display: none !important;
+//   }
+// }
+// @include media(">1200px") {
+//   .callNow {
+//     left: 2em;
+//   }
+// }
+@include media(">1249px") {
+  .callNow {
+    left: 2.5em;
+  }
+}
+
+
+// Search bar side align
+
+@include media(">899px") {
+  #search_query {
+    right: 8rem;
+  }
+}
+@include media(">999px") {
+  #search_query {
+    right: 8.75rem;
+  }
+}
+@include media(">1150px") {
+  #search_query {
+    right: 10.25em;
+  }
+}

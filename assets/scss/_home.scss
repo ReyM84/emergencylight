@@ -2,8 +2,25 @@
 @import "./settings/global/z-index/z-index";
 
 // Remove logo banner
-#body > div.header-container.sticky-header > div.header-container.full-width.full-width.in-container > div > div > header {
+#body
+  > div.header-container.sticky-header
+  > div.header-container.full-width.full-width.in-container
+  > div
+  > div
+  > header
+  > div.header-logo.header-logo--left
+  > a
+  > div
+  > img {
   display: none;
+}
+#body
+  > div.header-container.sticky-header
+  > div.header-container.full-width.full-width.in-container
+  > div
+  > div
+  > header {
+  background: white !important;
 }
 
 // Home Page
@@ -96,26 +113,17 @@
   }
 }
 
-//Responsive Carousel, Clients, and Call Now
-.callNow {
-  position: absolute;
-  width: 152px;
-}
-
 @include media(">=navfix") {
-#body
-  > div.header-container.sticky-header
-  > div.header-container.full-width.full-width.in-container
-  > div
-  > div
-  > header
-  > div.header-logo.header-logo--left {
-  display: none;
+  #body
+    > div.header-container.sticky-header
+    > div.header-container.full-width.full-width.in-container
+    > div
+    > div
+    > header
+    > div.header-logo.header-logo--left {
+    display: none;
+  }
 }
-}
-// .mySlides {
-//   display: none;
-// }
 
 .search-container {
   background: white !important;
@@ -212,4 +220,14 @@
   .header-padding {
     background: white !important;
   }
+}
+
+
+// Carousel slide fix
+
+#slick-slide00 > div > div > img,
+#slick-slide01 > div > div > img,
+#slick-slide02 > div > div > img,
+#slick-slide03 > div > div > img {
+  margin-left: -2rem !important;
 }
