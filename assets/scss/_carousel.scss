@@ -1,0 +1,181 @@
+// Carousel slide fix
+#slick-slide00 > div > div > img,
+#slick-slide01 > div > div > img,
+#slick-slide02 > div > div > img,
+#slick-slide03 > div > div > img {
+  margin-left: -2rem !important;
+}
+
+#body
+  > div.body.content
+  > div.container.main
+  > div.home.home-page-with-sidenav.slider-in-container
+  > div
+  > div.main.floated-carousel.carouselFlex
+  > div.main-content
+  > div.slider.float.in-container
+  > section
+  > div {
+  height: 21rem;
+}
+
+#body
+  > div.body.content
+  > div.container.main
+  > div.home.home-page-with-sidenav.slider-in-container
+  > div
+  > div.main.floated-carousel.carouselFlex
+  > div.main-content
+  > div.slider.float.in-container {
+  position: relative;
+}
+
+@include media(">300px", "<396px") {
+  #body
+    > div.body.content
+    > div.container.main
+    > div.home.home-page-with-sidenav.slider-in-container
+    > div
+    > div.main.floated-carousel.carouselFlex
+    > div.main-content
+    > div.slider.float.in-container
+    > section
+    > div {
+    height: 10rem;
+  }
+}
+@include media(">395px", "<501px") {
+  #body
+    > div.body.content
+    > div.container.main
+    > div.home.home-page-with-sidenav.slider-in-container
+    > div
+    > div.main.floated-carousel.carouselFlex
+    > div.main-content
+    > div.slider.float.in-container
+    > section
+    > div {
+    height: 12rem;
+  }
+}
+
+@include media(">500px", "<601px") {
+  #body
+    > div.body.content
+    > div.container.main
+    > div.home.home-page-with-sidenav.slider-in-container
+    > div
+    > div.main.floated-carousel.carouselFlex
+    > div.main-content
+    > div.slider.float.in-container
+    > section
+    > div {
+    height: 14rem;
+  }
+}
+
+@include media(">800px", "<915px") {
+  #body
+    > div.body.content
+    > div.container.main
+    > div.home.home-page-with-sidenav.slider-in-container
+    > div
+    > div.main.floated-carousel.carouselFlex
+    > div.main-content
+    > div.slider.float.in-container
+    > section
+    > div {
+    height: 18rem;
+  }
+}
+
+@include media(">914px") {
+  #body
+    > div.body.content
+    > div.container.main
+    > div.home.home-page-with-sidenav.slider-in-container
+    > div
+    > div.main.floated-carousel.carouselFlex
+    > div.main-content
+    > div.slider.float.in-container {
+    width: 720px;
+    position: relative;
+    left: 12%;
+  }
+
+  #carousel-active {
+    width: 796px;
+  }
+}
+
+//Carousel background change
+#body
+  > div.body.content
+  > div.container.main
+  > div.home.home-page-with-sidenav.slider-in-container
+  > div
+  > div.main.floated-carousel
+  > div.main-content
+  > div.slider.float.in-container {
+  background: white !important;
+}
+
+//Client section under Carousel
+.clientSection {
+  position: relative;
+  display: flex;
+  height: 15em;
+  background: white;
+  max-width: 720px;
+  h5 {
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 900;
+    font-size: 0.9375rem;
+    line-height: 1.875rem;
+    background: $primaryRed;
+    color: white;
+    text-align: center;
+    border-bottom: 3px solid #8b8b8b;
+  }
+  .fullSpecs {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    .vertDivide {
+      position: relative;
+      height: 70%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid rgba(198, 198, 198, 0.5);
+      .pdfButton {
+        position: relative;
+        left: 4.9em;
+        width: 60%;
+      }
+    }
+  }
+  .pastClients {
+    width: 50%;
+    .companyGif {
+      height: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 8em;
+      }
+    }
+  }
+}
+
+//Fixes
+
+@include media(">phone", "<lgphone") {
+  .pdfButton {
+    position: relative;
+    left: 0em !important;
+    width: 40em !important;
+  }
+}
