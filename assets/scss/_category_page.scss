@@ -32,3 +32,22 @@
   border-bottom: 3px solid $bottomBorder !important;
   border-radius: 1rem;
 }
+
+
+//Category Header 
+
+#body > div.header-container.sticky-header > div.header-container.full-width.full-width.in-container > div > div > header > div.header-logo.header-logo--left {
+  background: transparent;
+}
+
+#body > div.header-container.sticky-header > div.header-container.full-width.full-width.in-container > div > div > header {
+  display: none;
+}
+
+.bgCategory {
+  position: absolute;
+  top: -13rem;
+  width: 80%;
+  left: 12%;
+  top: -3%;
+}

@@ -1,145 +1,33 @@
 // Header for Home Page
 .bg {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 1rem;
-  justify-content: space-between;
   position: relative;
-  top: -15rem;
-}
-
-.bgSpacer {
-  height: 6rem;
-}
-
-@include media("<lgphone") {
+  display: flex;
+  flex-direction: column;
+  top: -4rem; 
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
   .homeLogo {
-    position: absolute;
-    width: 70%;
-    left: 3rem;
-  }
-
-  .homeNumber {
-    position: absolute;
-    left: 3rem;
-    top: 5rem;
-    width: 58%;
-    margin: 0 10%;
-  }
-}
-@include media(">=lgphone", "<655px") {
-  .homeNumber {
-    position: absolute;
-    top: 3rem;
-    left: 16%;
-    z-index: 10;
-    width: 60%;
-  }
-
-  .homeLogo {
-    position: absolute;
-    top: -4rem;
-    left: 5rem;
-    max-width: 66% !important;
-    z-index: 10 !important;
-  }
-
-  #body
-    > div.body.content
-    > div.container.main
-    > div.home.home-page-with-sidenav.slider-in-container
-    > div
-    > div.main.floated-carousel.carouselFlex
-    > div.main-content {
-    margin-top: 6rem;
+    width: 86%;
+  margin: 0 auto;
   }
 }
 
-@include media(">654px", "<tablet") {
-  .homeNumber {
-    position: absolute;
-    top: 0rem;
-    left: 26rem;
-    z-index: 10;
-    width: 36%;
-  }
-
-  .homeLogo {
-    position: absolute;
-    top: -4rem;
-    max-width: 53% !important;
-    z-index: 10 !important;
-  }
-
-  #body
-    > div.body.content
-    > div.container.main
-    > div.home.home-page-with-sidenav.slider-in-container
-    > div
-    > div.main.floated-carousel.carouselFlex
-    > div.main-content {
-    margin-top: 0rem;
-  }
+.homeLogo, .homeNumber {
+  width: 22rem !important;
 }
 
-@include media(">=tablet", "<navfix") {
-  .homeLogo {
-    width: 69% !important;
-  }
-
-  .homeNumber {
-    position: absolute;
-    z-index: 100;
-    top: 1rem !important;
-  }
-}
-
-@include media(">=navfix", "<desktop") {
-  .homeLogo {
-    width: 70%;
-  }
-
-  .homeNumber {
-    width: 87%;
-    position: relative;
-    top: 1.5rem;
-  }
-}
-
-@include media(">=desktop", "<1600px") {
+@include media(">=lgphone", "<tablet") {
   .bg {
-    width: 84%;
-  }
+    top: -2rem !important;
 
-  .homeLogo {
-    width: 65%;
-    position: relative;
-    top: 1rem;
-  }
-
-  .homeNumber {
-    position: relative;
-    width: 90%;
-    top: 2rem;
   }
 }
 
-@include media(">=1600px") {
+@include media(">=700px") {
   .bg {
-    width: 75%;
-  }
-
-  .homeLogo {
-    width: 69%;
-    position: relative;
-    top: 2rem;
-  }
-
-  .homeNumber {
-    width: 88%;
-    position: relative;
-    top: 3rem;
+    flex-direction: row;
+    top: unset;
   }
 }
+
