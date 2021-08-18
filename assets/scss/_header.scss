@@ -1,6 +1,6 @@
 // Custom header
 .bg {
-  width: 100%;
+  margin: 0 auto;  
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -10,3 +10,120 @@
 } 
 
 
+@include media("<lgphone") {
+    .mobileLogo {
+        position: absolute;
+        width: 70%;
+        left: 3rem; 
+      }
+      
+      .mobileNumber {
+        position:absolute;
+        left: 3rem;
+        top: 5rem;
+        width: 58%;
+        margin: 0 10%;
+      }
+}
+@include media(">=lgphone", "<655px") {
+    .mobileNumber {
+        position:absolute;
+        top: 3rem;
+        left: 16%;
+        z-index: 10;
+        width: 60%;
+       }
+
+      .mobileLogo {
+        position: absolute;
+        top: -4rem;
+        left: 5rem;
+        max-width: 66% !important;
+        z-index: 10 !important;
+      }
+         
+      #body > div.body.content > div.container.main > div.home.home-page-with-sidenav.slider-in-container > div > div.main.floated-carousel.carouselFlex > div.main-content {
+        margin-top: 6rem;
+      }
+}
+
+@include media(">654px","<tablet") {
+    .mobileNumber {
+        position:absolute;
+        top: 0rem;
+        left: 26rem;
+        z-index: 10;
+        width: 36%;
+       }
+
+      .mobileLogo {
+        position: absolute;
+        top: -4rem;
+        max-width: 53% !important;
+        z-index: 10 !important;
+      }
+         
+      #body > div.body.content > div.container.main > div.home.home-page-with-sidenav.slider-in-container > div > div.main.floated-carousel.carouselFlex > div.main-content {
+        margin-top: 0rem;
+      }
+}
+
+@include media(">=tablet","<navfix") {
+  .mobileLogo {
+    width: 69% !important;
+  }
+  
+  .mobileNumber {
+    position: absolute;
+    z-index: 100;
+    top: 1rem !important;
+  }
+}
+
+@include media(">=navfix","<desktop") {
+  .mobileLogo {
+    width: 70%;
+  }
+  
+  .mobileNumber {
+    width: 87%;
+    position: relative;
+    top: 1.5rem;
+  }
+}
+
+@include media(">=desktop","<1600px") {
+  .bg {
+    width: 84%;
+  }
+  
+  .mobileLogo {
+    width: 65%;
+    position: relative;
+    top: 1rem;
+  }
+  
+  .mobileNumber {
+    position: relative;
+    width: 90%;
+    top: 2rem;
+  }
+}
+
+@include media(">=1600px") {
+  .bg { 
+    width: 75%;
+  }
+  
+    .mobileLogo {
+      width: 69%;
+      position: relative;
+      top: 2rem;
+    }
+  
+    .mobileNumber {
+      width: 88%;
+      position: relative;
+      top: 3rem;
+    }
+}
