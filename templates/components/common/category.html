@@ -18,9 +18,7 @@ blog:
     {{/if}}
 {{/partial}}
 {{#partial "page"}}
-
-{{> components/custom/sidenav}}
-
+    {{> components/custom/sidenav}}
 <div class="category main {{#if theme_settings.top_pagination_visibility '===' false}}top-pagination-hidden {{/if}} {{#if theme_settings.bottom_pagination_visibility '===' false}}bottom-pagination-hidden {{/if}}">
     {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
     <h2 class="container-header">{{category.name}}</h2>
