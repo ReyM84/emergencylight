@@ -1,33 +1,13 @@
-// Header for Home Page
+
+// Custom header
+#body > div.header-container.sticky-header > div.header-container.full-width.full-width.in-container > div > div > header > div.header-logo.header-logo--left > a {
+  display: none !important;
+}
+
 .bg {
-  position: relative;
   display: flex;
   flex-direction: column;
-  top: -4rem; 
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding: 1rem;
-  .homeLogo {
-    width: 86%;
-  margin: 0 auto;
-  }
-}
-
-.homeLogo, .homeNumber {
-  width: 22rem !important;
-}
-
-@include media(">=lgphone", "<tablet") {
-  .bg {
-    top: -2rem !important;
-
-  }
-}
-
-@include media(">=700px") {
-  .bg {
-    flex-direction: row;
-    top: unset;
-  }
-}
-
+  position: relative;

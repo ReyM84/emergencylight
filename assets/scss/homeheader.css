@@ -1,0 +1,66 @@
+
+
+#body > div.body.content {
+    top: -3rem;
+}
+
+@media screen and (max-width: 320px) {
+    .pdfButton {
+        width: 10rem !important;
+        position: relative;
+        left: -0.5rem !important;
+      }
+  }
+
+@media screen and (min-width: 425px) {
+    .bg {
+        top: -4rem;
+    }
+    .mobileLogo, .mobileNumber { 
+        width: 370px;
+        max-width: 370px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+      .bg {
+          flex-direction: row;
+      }
+    .mobileLogo {
+        position: relative;
+        top: 4rem;
+      }
+      #body > div.body.content {
+        top: 1rem;
+
+    }
+  }
+
+  @media screen and (min-width: 801px) {
+    .mobileNumber {
+        position: relative;
+        top: 4.5rem;
+      }
+    .bg { 
+        top: -3rem;
+    }
+  }
+
+
+  @media screen and (min-width: 1368px){
+    .bg {
+        justify-content: space-around;
+      }
+  }
+
+  @media screen and (min-width: 1900px){
+    .mobileLogo {
+        left: 10rem
+      }
+      
+      .mobileNumber {
+        right: 10rem;
+      }
+  }
+
+ 

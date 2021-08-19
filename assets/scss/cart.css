@@ -1,0 +1,37 @@
+#body > div.body.content > div.container.main > div > main > div.cart-actions > a { 
+    border-radius: 2rem;
+  }
+
+@media screen and (max-width: 424px) {
+    .bg {
+        top: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 551px) {
+    #body > div.body.content > div.container.main > div > main > div:nth-child(5) > table > tbody > tr > td.cart-item-block.cart-item-figure > img {
+        width: 8rem;
+      }
+      
+      #body > div.body.content > div.container.main > div > main > div:nth-child(5) > table > tbody > tr > td.cart-item-block.cart-item-title {
+        width: 50%;
+      }
+      
+      .cart-item {
+        position: relative !important;
+        left: 8rem !important;
+      }
+}
+
+@media screen and (min-width: 768px) {
+    .bg {
+        flex-direction: row;
+    }
+    .mobileNumber, .mobileLogo {
+        width: 370px;
+    }
+    .mobileLogo {
+        position: relative;
+        top: 3rem;
+      }
+}

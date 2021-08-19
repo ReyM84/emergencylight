@@ -23,6 +23,7 @@ blog:
 {{> components/custom/category-sidenav}}
 
 <div class="category main {{#if theme_settings.top_pagination_visibility '===' false}}top-pagination-hidden {{/if}}{{#if theme_settings.bottom_pagination_visibility '===' false}}bottom-pagination-hidden{{/if}}{{#if theme_settings.product_layout_view '===' 'both_grid_default'}}grid-default{{/if}}{{#if theme_settings.product_layout_view '===' 'both_list_default'}}list-default{{/if}} {{#if category.faceted_search_enabled}} product-filtering-enabled {{else}} product-filtering-disabled{{/if}}">
+  <link rel="stylesheet" href="../../assets/scss/categoryfix.css">
     {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
     <h2 class="container-header">{{category.name}}</h2>
     {{{region name="category_below_header--global"}}}
