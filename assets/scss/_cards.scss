@@ -10,9 +10,15 @@
   text-align: center !important;
 }
 
+#carousel-active {
+  position: relative;
+  z-index: 1;
+  padding-left: 0.4rem;
+}
+
 .productCarousel-slide {
   width: 14rem !important;
-  height: 25rem;
+  height: 27rem;
 
   &:hover {
     border: 3px solid $primaryRed;

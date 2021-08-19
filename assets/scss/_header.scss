@@ -1,1 +1,14 @@
 // Custom header
+#body > div.header-container.sticky-header > div.header-container.full-width.full-width.in-container > div > div > header > div.header-logo.header-logo--left > a {
+  display: none !important;
+}
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
