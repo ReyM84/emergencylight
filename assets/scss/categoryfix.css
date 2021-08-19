@@ -1,37 +1,67 @@
 .bg {
-     top: 4rem;
+	top: 4rem;
 }
-
-
+#body>div.body.content>div>form>fieldset>div>input.button.button--primary.form-prefixPostfix-button--postfix {
+	background: transparent;
+	border: none;
+}
 @media screen and (min-width: 425px) {
-    .bg {
-        top: 2rem !important;
-    }
-    .mobileLogo, .mobileNumber { 
-        width: 370px;
-        max-width: 370px;
-    }
-  }
-
+	.bg {
+		top: 2rem !important;
+	}
+	.mobileLogo, .mobileNumber {
+		width: 370px;
+		max-width: 370px;
+	}
+}
 @media screen and (min-width: 768px) {
-    .bg {
-        flex-direction: row;
-    }
-    .mobileLogo {
-        position: relative;
-        top: 2.5rem;
-    }
-      .mobileNumber {
-        top: 4rem !important;
-    }
+	.bg {
+		flex-direction: row;
+	}
+	.mobileLogo {
+		position: relative;
+		top: 2.5rem;
+	}
+	.mobileNumber {
+		top: 4rem !important;
+	}
 }
-
+@media screen and (max-width: 800px) {
+	.callNow {
+		display: none;
+	}
+	.catsearch {
+		display: none;
+	}
+}
 @media screen and (min-width: 801px) {
-    #side-categories > div.categories {
-        top: 7rem;
-      }
-    .callNow {
-        top: 7rem;
-      }
+	#side-categories>div.categories, .callNow {
+		top: -6rem;
+	}
+	.mobileLogo {
+		top: -0.5rem !important;
+	}
+	#body>div.body.content>div>div.category.main.top-pagination-hidden.grid-default.product-filtering-disabled {
+		position: relative;
+		top: -9.8rem
+	}
 }
-
+@media screen and (min-width: 801px) and (max-width: 1260px) {
+	.catsearch {
+		position: relative !important;
+		left: 1.5rem;
+	}
+}
+@media screen and (min-width: 1368px) {
+	.bg {
+		justify-content: space-around;
+	}
+}
+@media screen and (min-width: 1900px) {
+	.mobileLogo {
+		left: 10rem
+	}
+	.mobileNumber {
+		right: 10rem;
+	}
+}
